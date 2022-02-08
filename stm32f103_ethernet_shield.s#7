@@ -1017,9 +1017,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="-2.54" y="78.74" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="COM_1_3" gate="G$1" pin="RD+"/>
-<wire x1="68.58" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="63.5" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+<pinref part="COM_1_3" gate="G$1" pin="TD-"/>
+<wire x1="68.58" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="71.12" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
 </segment>
 </net>
 <net name="PA_11" class="0">
@@ -1109,6 +1109,26 @@ Source: http://www.3M.com/ehpd</description>
 <label x="-2.54" y="50.8" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
+<pinref part="COM_1_3" gate="G$1" pin="RD+"/>
+<wire x1="68.58" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="63.5" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="CG1"/>
+<wire x1="68.58" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="48.26" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+<segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="CTT"/>
+<wire x1="134.62" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="137.16" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="CG2"/>
+<wire x1="134.62" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="106.68" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
 <pinref part="POWER" gate="G$1" pin="TD+"/>
 <wire x1="137.16" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
 <label x="132.08" y="81.28" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
@@ -1128,26 +1148,6 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="193.04" y1="63.5" x2="193.04" y2="58.42" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
 <label x="193.04" y="58.42" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
-<segment>
-<pinref part="COM_1_3" gate="G$1" pin="CTR"/>
-<wire x1="68.58" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
-</segment>
-<segment>
-<pinref part="COM_1_3" gate="G$1" pin="RD-"/>
-<wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
-</segment>
-<segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="TD+"/>
-<wire x1="134.62" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="142.24" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
-</segment>
-<segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="RD+"/>
-<wire x1="134.62" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="124.46" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
-</segment>
 </net>
 <net name="GND@1" class="0">
 <segment>
@@ -1159,6 +1159,16 @@ Source: http://www.3M.com/ehpd</description>
 <pinref part="MPU6050" gate="G$1" pin="GND"/>
 <wire x1="60.96" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91" grouprefs="IMU"/>
 <label x="55.88" y="132.08" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="IMU"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="CTT"/>
+<wire x1="68.58" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="76.2" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="CG2"/>
+<wire x1="68.58" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="45.72" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="CTT"/>
@@ -1228,9 +1238,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="55.88" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="TD-"/>
-<wire x1="134.62" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="132.08" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+<pinref part="ENC_X_Y" gate="G$1" pin="TD+"/>
+<wire x1="134.62" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="142.24" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 </net>
 <net name="PA_1" class="0">
@@ -1240,9 +1250,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="58.42" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="CTT"/>
-<wire x1="134.62" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="137.16" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+<pinref part="ENC_X_Y" gate="G$1" pin="TD-"/>
+<wire x1="134.62" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="132.08" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 </net>
 <net name="PA_2" class="0">
@@ -1252,9 +1262,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="60.96" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="RD-"/>
-<wire x1="134.62" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="114.3" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+<pinref part="ENC_X_Y" gate="G$1" pin="CTR"/>
+<wire x1="134.62" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="119.38" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 </net>
 <net name="PA_3" class="0">
@@ -1264,9 +1274,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="63.5" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="CG2"/>
-<wire x1="134.62" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="106.68" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+<pinref part="ENC_X_Y" gate="G$1" pin="RD-"/>
+<wire x1="134.62" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="114.3" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 </net>
 <net name="PA_4" class="0">
@@ -1318,9 +1328,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="81.28" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="COM_1_3" gate="G$1" pin="TD-"/>
-<wire x1="68.58" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="71.12" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+<pinref part="COM_1_3" gate="G$1" pin="CTR"/>
+<wire x1="68.58" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
 </segment>
 </net>
 <net name="PB_11" class="0">
@@ -1330,9 +1340,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="83.82" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
-<pinref part="COM_1_3" gate="G$1" pin="CTT"/>
-<wire x1="68.58" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="76.2" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+<pinref part="COM_1_3" gate="G$1" pin="RD-"/>
+<wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="63.5" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -1366,14 +1376,14 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="91.44" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="RD+"/>
+<wire x1="134.62" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="129.54" y="124.46" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
 <pinref part="ENC_X_Y" gate="G$1" pin="CG1"/>
 <wire x1="134.62" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
 <label x="129.54" y="109.22" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
-</segment>
-<segment>
-<pinref part="ENC_X_Y" gate="G$1" pin="CTR"/>
-<wire x1="134.62" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
-<label x="129.54" y="119.38" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 </net>
 <net name="GND@3" class="0">
@@ -1382,15 +1392,63 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="22.86" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91" grouprefs="STM32F103"/>
 <label x="27.94" y="93.98" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
+</net>
+<net name="LA" class="0">
 <segment>
-<pinref part="COM_1_3" gate="G$1" pin="CG2"/>
-<wire x1="68.58" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="45.72" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+<pinref part="ENC_X_Y" gate="G$1" pin="LA"/>
+<wire x1="170.18" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="175.26" y="142.24" size="1.27" layer="95" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 <segment>
-<pinref part="COM_1_3" gate="G$1" pin="CG1"/>
-<wire x1="68.58" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
-<label x="63.5" y="48.26" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
+<pinref part="COM_1_3" gate="G$1" pin="LA"/>
+<wire x1="104.14" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="109.22" y="81.28" size="1.27" layer="95" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+</net>
+<net name="LC" class="0">
+<segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="LC"/>
+<wire x1="170.18" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="175.26" y="139.7" size="1.27" layer="95" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="LC"/>
+<wire x1="104.14" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="109.22" y="78.74" size="1.27" layer="95" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+</net>
+<net name="RA" class="0">
+<segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="RA"/>
+<wire x1="170.18" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="175.26" y="134.62" size="1.27" layer="95" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="RA"/>
+<wire x1="104.14" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="109.22" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="RA"/>
+<wire x1="172.72" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="177.8" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+</net>
+<net name="RC" class="0">
+<segment>
+<pinref part="ENC_X_Y" gate="G$1" pin="RC"/>
+<wire x1="170.18" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91" grouprefs="ENCODER_X_Y"/>
+<label x="175.26" y="132.08" size="1.27" layer="95" xref="yes" grouprefs="ENCODER_X_Y"/>
+</segment>
+<segment>
+<pinref part="COM_1_3" gate="G$1" pin="RC"/>
+<wire x1="104.14" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
+<label x="109.22" y="71.12" size="1.27" layer="95" xref="yes" grouprefs="SERIAL_1_3"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="RC"/>
+<wire x1="172.72" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="177.8" y="71.12" size="1.27" layer="95" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 </net>
 <net name="LA1" class="0">
