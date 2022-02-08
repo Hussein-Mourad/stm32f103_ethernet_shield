@@ -1109,6 +1109,11 @@ Source: http://www.3M.com/ehpd</description>
 <label x="-2.54" y="50.8" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
+<pinref part="POWER" gate="G$1" pin="RD+"/>
+<wire x1="137.16" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="63.5" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+<segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="63.5" x2="193.04" y2="58.42" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
 <label x="193.04" y="58.42" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="POWER_RESET"/>
@@ -1124,6 +1129,11 @@ Source: http://www.3M.com/ehpd</description>
 <label x="129.54" y="124.46" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 <segment>
+<pinref part="POWER" gate="G$1" pin="CTR"/>
+<wire x1="137.16" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+<segment>
 <pinref part="COM_1_3" gate="G$1" pin="CTR"/>
 <wire x1="68.58" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
 <label x="63.5" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
@@ -1132,16 +1142,6 @@ Source: http://www.3M.com/ehpd</description>
 <pinref part="COM_1_3" gate="G$1" pin="RD-"/>
 <wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91" grouprefs="SERIAL_1_3"/>
 <label x="63.5" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="SERIAL_1_3"/>
-</segment>
-<segment>
-<pinref part="POWER" gate="G$1" pin="CG2"/>
-<wire x1="137.16" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="45.72" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
-</segment>
-<segment>
-<pinref part="POWER" gate="G$1" pin="RD-"/>
-<wire x1="137.16" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="CG1"/>
@@ -1363,6 +1363,16 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="93.98" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
+<pinref part="POWER" gate="G$1" pin="CG2"/>
+<wire x1="137.16" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="45.72" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="RD-"/>
+<wire x1="137.16" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+<segment>
 <pinref part="POWER" gate="G$1" pin="RC"/>
 <wire x1="172.72" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
 <label x="177.8" y="71.12" size="1.27" layer="95" xref="yes"/>
@@ -1378,14 +1388,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="129.54" y="109.22" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ENCODER_X_Y"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="RD+"/>
-<wire x1="137.16" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="63.5" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
-</segment>
-<segment>
-<pinref part="POWER" gate="G$1" pin="CTR"/>
-<wire x1="137.16" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+<pinref part="POWER" gate="G$1" pin="S1"/>
+<wire x1="172.72" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
+<label x="177.8" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="S2"/>
