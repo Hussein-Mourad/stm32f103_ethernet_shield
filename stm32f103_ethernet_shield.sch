@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1144,14 +1144,9 @@ Source: http://www.3M.com/ehpd</description>
 <label x="132.08" y="53.34" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="CTT"/>
-<wire x1="137.16" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="76.2" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
-</segment>
-<segment>
-<pinref part="POWER" gate="G$1" pin="TD+"/>
-<wire x1="137.16" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="81.28" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+<pinref part="POWER" gate="G$1" pin="CG1"/>
+<wire x1="137.16" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="48.26" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 </net>
 <net name="GND@1" class="0">
@@ -1337,6 +1332,11 @@ Source: http://www.3M.com/ehpd</description>
 <label x="27.94" y="86.36" size="1.27" layer="95" xref="yes" grouprefs="STM32F103"/>
 </segment>
 <segment>
+<pinref part="POWER" gate="G$1" pin="TD+"/>
+<wire x1="137.16" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="81.28" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+</segment>
+<segment>
 <pinref part="POWER" gate="G$1" pin="TD-"/>
 <wire x1="137.16" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
 <label x="132.08" y="71.12" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
@@ -1388,9 +1388,14 @@ Source: http://www.3M.com/ehpd</description>
 <label x="132.08" y="58.42" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 <segment>
-<pinref part="POWER" gate="G$1" pin="CG1"/>
-<wire x1="137.16" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
-<label x="132.08" y="48.26" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
+<pinref part="POWER" gate="G$1" pin="S2"/>
+<wire x1="172.72" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
+<label x="177.8" y="45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="CTT"/>
+<wire x1="137.16" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91" grouprefs="POWER_RESET"/>
+<label x="132.08" y="76.2" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="POWER_RESET"/>
 </segment>
 </net>
 <net name="RA1" class="0">
